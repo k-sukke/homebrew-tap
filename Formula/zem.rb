@@ -1,25 +1,25 @@
 class Zem < Formula
   desc "Zephyr Environment Manager: declarative, isolated Zephyr RTOS environments"
   homepage "https://github.com/k-sukke/zem"
-  version "0.1.4"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/k-sukke/zem/releases/download/v0.1.4/zem-aarch64-apple-darwin.tar.xz"
-      sha256 "f36394da9584caaac0a815218088ded0dea8d4c6ce540c76b67e364e300167a5"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-aarch64-apple-darwin.tar.xz"
+      sha256 "96a0c5d869f7cb25039856d00dadcfb566193eff0ab35217719f1d2f5064cd3b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k-sukke/zem/releases/download/v0.1.4/zem-x86_64-apple-darwin.tar.xz"
-      sha256 "dedb18165fa9a815f7c5b1cc8fec7bc5dbd55c1adeec9f1e2a3db687c73c7032"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-x86_64-apple-darwin.tar.xz"
+      sha256 "b89f63242eeebf2d1a0cbe2a2a5600aa9625fd1f783acf343a43dc33b8772511"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/k-sukke/zem/releases/download/v0.1.4/zem-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "f61bf5046a426c561da9e879d9ee906d517c44f8c6a38d4749709d433ac16199"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "56ea846ca7806e318b9befcfbc521b91527ebd2b72ecaa0ca7bdacb59a62471a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k-sukke/zem/releases/download/v0.1.4/zem-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "808a6c1c1f3ddcfea39951f550ab418f3645633228b97d9f7eeba71c04a975f9"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "9f17e6adf845cbf7e01c3431e8f3f8500280d4028cdd7da6501d843bfc4c1d3b"
     end
   end
   license "MIT"
@@ -30,6 +30,7 @@ class Zem < Formula
     "aarch64-unknown-linux-musl-dynamic": {},
     "aarch64-unknown-linux-musl-static":  {},
     "x86_64-apple-darwin":                {},
+    "x86_64-pc-windows-gnu":              {},
     "x86_64-unknown-linux-gnu":           {},
     "x86_64-unknown-linux-musl-dynamic":  {},
     "x86_64-unknown-linux-musl-static":   {},
