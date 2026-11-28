@@ -1,25 +1,25 @@
 class Zem < Formula
   desc "Zephyr Environment Manager: declarative, isolated Zephyr RTOS environments"
   homepage "https://github.com/k-sukke/zem"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-aarch64-apple-darwin.tar.xz"
-      sha256 "96a0c5d869f7cb25039856d00dadcfb566193eff0ab35217719f1d2f5064cd3b"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.1/zem-aarch64-apple-darwin.tar.xz"
+      sha256 "fc27edcf7591334d0517599ac0d6f37e0638c7c4333b0691a2fa6ec8ba5432f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-x86_64-apple-darwin.tar.xz"
-      sha256 "b89f63242eeebf2d1a0cbe2a2a5600aa9625fd1f783acf343a43dc33b8772511"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.1/zem-x86_64-apple-darwin.tar.xz"
+      sha256 "2256b1a53f2daaf8462065463b5e4791ed9545964dd47bf671210e1570a3351e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "56ea846ca7806e318b9befcfbc521b91527ebd2b72ecaa0ca7bdacb59a62471a"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.1/zem-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "475a01036a3e5b8cab1c0e2adf119dab1197592f85f1b336c5e29e93abbfe357"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/k-sukke/zem/releases/download/v0.2.0/zem-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "9f17e6adf845cbf7e01c3431e8f3f8500280d4028cdd7da6501d843bfc4c1d3b"
+      url "https://github.com/k-sukke/zem/releases/download/v0.2.1/zem-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "b0c7c95f0c1b4bc9c327310bcb6b0f6c8f1cf779e95345099e3fc2b5018c0220"
     end
   end
   license "MIT"
